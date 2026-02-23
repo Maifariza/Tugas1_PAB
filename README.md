@@ -128,7 +128,7 @@ File main.dart adalah titik awal aplikasi dijalankan. Di sini juga diatur Provid
 
    <img width="1902" height="943" alt="image" src="https://github.com/user-attachments/assets/b2f54188-fae2-4f07-9144-074fcf5a9a34" />
 
-   ==**Validasi Form Data Pembeli**==
+   **Validasi Form Data Pembeli**
 
    Pada halaman checkout, terdapat form yang harus diisi oleh pengguna, seperti nama lengkap, alamat, dan nomor telepon. Form ini tidak boleh dikosongkan.
 
