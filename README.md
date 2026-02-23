@@ -39,6 +39,12 @@ Aplikasi ini dibuat untuk mensimulasikan proses belanja sederhana dalam satu apl
 
 ---
 
+## Struktur Program
+
+> <img width="239" height="623" alt="image" src="https://github.com/user-attachments/assets/6a2a9575-7a25-47ef-a676-f867b92d45e1" />
+
+---
+
 ## Alur Penggunaan Aplikasi
 
 1. **Membuka Aplikasi**
