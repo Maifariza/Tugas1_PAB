@@ -78,7 +78,11 @@ File main.dart adalah titik awal aplikasi dijalankan. Di sini juga diatur Provid
 ## Alur Penggunaan Aplikasi
 
 1. **Membuka Aplikasi**
-  
+
+   Untuk menjalankan aplikasi Shopping Cart App State Management, langkah pertama adalah membuka project melalui Visual Studio Code (VS Code). Setelah project terbuka, program dijalankan dengan menekan tombol Run yang berada di bagian kanan atas VS Code. Tombol tersebut digunakan untuk memulai proses eksekusi aplikasi.
+   
+   <img width="1919" height="1038" alt="Screenshot 2026-02-24 045722" src="https://github.com/user-attachments/assets/efaa6db4-ec38-41ae-9e5d-dab4b22a4b90" />
+
    Saat aplikasi dijalankan, pengguna langsung melihat halaman daftar produk Shopping Cart App State Management. Produk ditampilkan dalam bentuk grid sehingga mudah dilihat dan dipilih oleh pengguna.
 
    <img width="1903" height="943" alt="image" src="https://github.com/user-attachments/assets/f1a07676-393a-41f7-8cd4-2f6e6fb93992" />
@@ -136,7 +140,7 @@ File main.dart adalah titik awal aplikasi dijalankan. Di sini juga diatur Provid
 
 
 
-9. **Menyelesaikan Pesanan**
+8. **Menyelesaikan Pesanan**
   
     Setelah mengisi data dengan benar, pengguna bisa langsung menekan tombol “Place Order” dan pesanan dianggap selesai. Keranjang akan dikosongkan dan pengguna kembali ke halaman utama. Setelah itu, akan muncul notifikasi di bagian bawah layar yang menandakan bahwa pesanan berhasil diproses.
 
