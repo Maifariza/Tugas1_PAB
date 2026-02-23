@@ -38,7 +38,7 @@ Aplikasi ini dibuat untuk mensimulasikan proses belanja sederhana dalam satu apl
 - Checkout Page (Order Summary + Form)
 
 
-**Features Checklist**:
+**FEATURES CHECKLIST**:
 
 - [✔] Product model
 - [✔] Cart model with ChangeNotifier
@@ -79,14 +79,14 @@ File main.dart adalah titik awal aplikasi dijalankan. Di sini juga diatur Provid
 
 1. **Membuka Aplikasi**
   
-   Saat aplikasi dijalankan, pengguna langsung melihat halaman daftar produk. Produk ditampilkan dalam bentuk grid sehingga mudah dilihat dan dipilih.
+   Saat aplikasi dijalankan, pengguna langsung melihat halaman daftar produk Shopping Cart App State Management. Produk ditampilkan dalam bentuk grid sehingga mudah dilihat dan dipilih oleh pengguna.
 
    <img width="1903" height="943" alt="image" src="https://github.com/user-attachments/assets/f1a07676-393a-41f7-8cd4-2f6e6fb93992" />
 
   
 2. **Menambahkan Produk ke Keranjang**
   
-   Pengguna dapat menekan tombol “Add” yang ada pada button tepat di bawah produk yang ingin dibeli. Produk akan langsung masuk ke dalam keranjang. Jika produk yang sama ditambahkan lagi, jumlahnya akan otomatis bertambah.
+   Setelah melihat-lihat produk, pengguna dapat menekan tombol “Add” yang ada pada button tepat di bawah produk yang ingin dibeli. Produk akan langsung masuk ke dalam keranjang. Jika produk yang sama ditambahkan lagi, jumlahnya akan otomatis bertambah.
 
    <img width="1908" height="880" alt="image" src="https://github.com/user-attachments/assets/f6b5f1da-9689-41d7-99f6-cc5d4fc56fd9" />
 
