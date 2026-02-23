@@ -1,4 +1,4 @@
-<h2 align="center">Shopping Cart App State Management dengan Provide 𖤓</h2>
+<h1 align="center">🛍️ Shopping Cart App State Management dengan Provide 𖤓</h2>
 
 
 | **IDENTITAS** | **KETERANGAN** |
@@ -25,17 +25,17 @@ Aplikasi ini dibuat untuk mensimulasikan proses belanja sederhana dalam satu apl
 
 **FITUR WAJIB**
 
-- Add to cart from product list
-- Show cart items dengan quantity
-- Update quantity (+/-)
-- Remove items from cart
-- Display total price correctly
+- Add to cart from product list ✅
+- Show cart items dengan quantity ✅
+- Update quantity (+/-) ✅
+- Remove items from cart ✅
+- Display total price correctly ✅
 
 **FITUR BONUS**
 
-- Search / Filter produk
-- Filter berdasarkan kategori
-- Checkout Page (Order Summary + Form)
+- Search / Filter produk ✅
+- Filter berdasarkan kategori ✅
+- Checkout Page (Order Summary + Form) ✅
 
 ---
 
@@ -95,6 +95,7 @@ Aplikasi ini dibuat untuk mensimulasikan proses belanja sederhana dalam satu apl
 
    <img width="1910" height="956" alt="image" src="https://github.com/user-attachments/assets/c8fc23dc-3b31-4f6d-9c4f-657f7aea1137" />
 
+---
 
 **𝜗ৎ FITUR BONUS**
 
@@ -126,9 +127,12 @@ Aplikasi ini dibuat untuk mensimulasikan proses belanja sederhana dalam satu apl
    Pada bagian atas halaman, ditampilkan Order Summary, yaitu daftar produk yang dibeli lengkap dengan jumlah item dan total harga. Total harga akan otomatis dihitung berdasarkan produk yang ada di keranjang.
 
    Di bawah ringkasan pesanan, terdapat bagian Customer Information yang berisi beberapa field yang harus diisi oleh pengguna, yaitu:
-   - Full Name
-   - Address
-   - Phone Number
+   
+   ╰┈➤ Full Name
+   
+   ╰┈➤ Address
+   
+   ╰┈➤ Phone Number
 
    Pengguna wajib mengisi data tersebut sebelum menyelesaikan pesanan. Jika ada data yang belum diisi, maka pesanan tidak dapat diproses.
 
@@ -138,5 +142,6 @@ Aplikasi ini dibuat untuk mensimulasikan proses belanja sederhana dalam satu apl
    - Mengosongkan isi keranjang
    - Mengembalikan pengguna ke halaman utama
    - Menampilkan notifikasi bahwa pesanan berhasil dilakukan
+     
    
    <img width="1906" height="943" alt="image" src="https://github.com/user-attachments/assets/5fd1f293-baa6-4059-893e-ba07378f6964" />
