@@ -1,7 +1,7 @@
-// lib/pages/cart_page.dart
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/cart_model.dart';
+import 'checkout_page.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
@@ -12,7 +12,6 @@ class CartPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Shopping Cart'),
         actions: [
-          // Clear cart button
           Consumer<CartModel>(
             builder: (context, cart, child) {
               return cart.isEmpty
@@ -20,7 +19,6 @@ class CartPage extends StatelessWidget {
                   : IconButton(
                       icon: const Icon(Icons.delete_outline),
                       onPressed: () {
-                        // Show confirmation dialog
                         showDialog(
                           context: context,
                           builder: (ctx) => AlertDialog(
@@ -95,12 +93,11 @@ class CartPage extends StatelessWidget {
                         padding: const EdgeInsets.all(8),
                         child: Row(
                           children: [
-                            // Product emoji
                             Container(
                               width: 80,
                               height: 80,
                               decoration: BoxDecoration(
-                                color: Colors.deepPurple.shade50,
+                                color: const Color.fromARGB(255, 252, 192, 234),
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Center(
@@ -111,7 +108,6 @@ class CartPage extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(width: 12),
-                            // Product info
                             Expanded(
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -122,8 +118,6 @@ class CartPage extends StatelessWidget {
                                       fontWeight: FontWeight.bold,
                                       fontSize: 16,
                                     ),
-                                    maxLines: 2,
-                                    overflow: TextOverflow.ellipsis,
                                   ),
                                   const SizedBox(height: 4),
                                   Text(
@@ -134,7 +128,6 @@ class CartPage extends StatelessWidget {
                                     ),
                                   ),
                                   const SizedBox(height: 8),
-                                  // Quantity controls
                                   Row(
                                     children: [
                                       IconButton(
@@ -142,17 +135,12 @@ class CartPage extends StatelessWidget {
                                           cart.decreaseQuantity(product.id);
                                         },
                                         icon: const Icon(Icons.remove_circle_outline),
-                                        constraints: const BoxConstraints(),
-                                        padding: EdgeInsets.zero,
                                       ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(horizontal: 12),
-                                        child: Text(
-                                          '${cartItem.quantity}',
-                                          style: const TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.bold,
-                                          ),
+                                      Text(
+                                        '${cartItem.quantity}',
+                                        style: const TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
                                         ),
                                       ),
                                       IconButton(
@@ -160,27 +148,18 @@ class CartPage extends StatelessWidget {
                                           cart.increaseQuantity(product.id);
                                         },
                                         icon: const Icon(Icons.add_circle_outline),
-                                        constraints: const BoxConstraints(),
-                                        padding: EdgeInsets.zero,
                                       ),
                                     ],
                                   ),
                                 ],
                               ),
                             ),
-                            // Remove button & subtotal
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 IconButton(
                                   onPressed: () {
                                     cart.removeItem(product.id);
-                                    ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(
-                                        content: Text('${product.name} removed'),
-                                        duration: const Duration(seconds: 1),
-                                      ),
-                                    );
                                   },
                                   icon: const Icon(Icons.delete, color: Colors.red),
                                 ),
@@ -188,7 +167,6 @@ class CartPage extends StatelessWidget {
                                   'Rp ${cartItem.totalPrice.toStringAsFixed(0)}',
                                   style: const TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 14,
                                   ),
                                 ),
                               ],
@@ -200,7 +178,8 @@ class CartPage extends StatelessWidget {
                   },
                 ),
               ),
-              // Total price bar
+
+              // ===== TOTAL BAR =====
               Container(
                 padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
@@ -219,7 +198,6 @@ class CartPage extends StatelessWidget {
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisSize: MainAxisSize.min,
                         children: [
                           const Text(
                             'Total',
@@ -233,38 +211,17 @@ class CartPage extends StatelessWidget {
                             style: const TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.bold,
-                              color: Colors.blue,
+                              color: Colors.pink,
                             ),
                           ),
                         ],
                       ),
                       ElevatedButton(
                         onPressed: () {
-                          // Checkout action
-                          showDialog(
-                            context: context,
-                            builder: (ctx) => AlertDialog(
-                              title: const Text('Checkout'),
-                              content: Text(
-                                'Total: Rp ${cart.totalPrice.toStringAsFixed(0)}\nItems: ${cart.totalQuantity}',
-                              ),
-                              actions: [
-                                TextButton(
-                                  onPressed: () => Navigator.pop(ctx),
-                                  child: const Text('Cancel'),
-                                ),
-                                ElevatedButton(
-                                  onPressed: () {
-                                    cart.clear();
-                                    Navigator.pop(ctx);
-                                    Navigator.pop(context);
-                                    ScaffoldMessenger.of(context).showSnackBar(
-                                      const SnackBar(content: Text('Order placed!')),
-                                    );
-                                  },
-                                  child: const Text('Confirm'),
-                                ),
-                              ],
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const CheckoutPage(),
                             ),
                           );
                         },

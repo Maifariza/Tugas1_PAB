@@ -1,4 +1,3 @@
-// main.dart
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'models/cart_model.dart';
@@ -21,12 +20,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Shopping Cart',
       theme: ThemeData(
-    useMaterial3: true,
-    colorScheme: ColorScheme.fromSeed(
-      seedColor: Colors.pinkAccent,
-    ),
-    scaffoldBackgroundColor: Colors.pink.shade50,
-  ),
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.pinkAccent,
+        ),
+        scaffoldBackgroundColor: const Color.fromARGB(255, 255, 255, 255),
+      ),
       home: const ProductListPage(),
     );
   }
