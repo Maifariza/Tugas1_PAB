@@ -20,28 +20,58 @@ Selain itu, aplikasi ini juga menyediakan halaman checkout yang menampilkan ring
 Aplikasi ini dibuat untuk mensimulasikan proses belanja sederhana dalam satu aplikasi mobile.
 
 ---
-
+      
 ## Ketentuan Aplikasi
 
 **FITUR WAJIB**
 
-- Add to cart from product list ✅
-- Show cart items dengan quantity ✅
-- Update quantity (+/-) ✅
-- Remove items from cart ✅
-- Display total price correctly ✅
+- Add to cart from product list 
+- Show cart items dengan quantity 
+- Update quantity (+/-) 
+- Remove items from cart 
+- Display total price correctly 
 
 **FITUR BONUS**
 
-- Search / Filter produk ✅
-- Filter berdasarkan kategori ✅
-- Checkout Page (Order Summary + Form) ✅
+- Search / Filter produk 
+- Filter berdasarkan kategori 
+- Checkout Page (Order Summary + Form)
+
+
+**Features Checklist**:
+
+- [✔] Product model
+- [✔] Cart model with ChangeNotifier
+- [✔] Product list page
+- [✔] Add to cart button
+- [✔] Cart badge showing item count
+- [✔] Cart page with all items
+- [✔] Increase/decrease quantity
+- [✔] Remove item button
+- [✔] Total price calculation
+- [✔] Empty cart messag
 
 ---
 
 ## Struktur Program
 
 > <img width="239" height="623" alt="image" src="https://github.com/user-attachments/assets/6a2a9575-7a25-47ef-a676-f867b92d45e1" />
+
+Di dalam folder utama ada beberapa folder seperti android, ios, web, windows, linux, dan macos. Folder-folder itu dipakai karena Flutter bisa jalan di banyak platform, jadi semuanya sudah disiapkan dari awal.
+
+Bagian yang paling penting ada di folder lib, karena di situlah semua kode utama aplikasi ditulis. Di dalam lib, kodenya dipisah jadi beberapa bagian supaya lebih teratur.
+
+Folder models dipakai untuk menyimpan data dan logika yang berhubungan dengan keranjang.
+File product.dart berisi data produk seperti nama, harga, kategori, dan deskripsi.
+File cart_item.dart digunakan untuk menyimpan produk yang sudah masuk ke keranjang beserta jumlahnya.
+Sedangkan cart_model.dart mengatur semua proses di keranjang, seperti menambah produk, mengurangi jumlah, menghapus produk, dan menghitung total harga. File ini juga yang mengatur state supaya tampilan bisa ikut berubah otomatis saat data berubah.
+
+Lalu ada folder pages, yang isinya tampilan aplikasi.
+product_list_page.dart adalah halaman utama yang menampilkan daftar produk lengkap dengan fitur kategori dan pencarian.
+cart_page.dart menampilkan isi keranjang dan pengaturan jumlah produk.
+checkout_page.dart digunakan saat pengguna ingin menyelesaikan pesanan, lengkap dengan ringkasan belanja dan form data pembeli.
+
+File main.dart adalah titik awal aplikasi dijalankan. Di sini juga diatur Provider supaya data keranjang bisa dipakai di semua halaman.
 
 ---
 
