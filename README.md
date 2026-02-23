@@ -31,14 +31,21 @@ Selain fitur wajib, saya juga menambahkan fitur bonus berupa:
 
 1. Fitur pencarian produk berdasarkan nama, sehingga pengguna dapat dengan mudah menemukan produk tertentu.
 
-  
+   <img width="1904" height="939" alt="image" src="https://github.com/user-attachments/assets/7b26da8f-4ac0-4b1c-acf4-45503a44b03b" />
 
 2. Filter berdasarkan kategori untuk mempermudah penyaringan produk.
+  
+   <img width="1906" height="337" alt="Screenshot 2026-02-23 130512" src="https://github.com/user-attachments/assets/320f2796-f347-4a53-87c9-0be40f8aa8b3" />
 
    
 3. Halaman checkout terpisah yang menampilkan ringkasan pesanan (order summary) serta form pengisian data pembeli.
+  
+   Pada halaman checkout, pengguna diwajibkan mengisi nama, alamat, dan nomor telepon. Form tersebut memiliki validasi sederhana untuk memastikan data tidak kosong.
 
-Pada halaman checkout, pengguna diwajibkan mengisi nama, alamat, dan nomor telepon. Form tersebut memiliki validasi sederhana untuk memastikan data tidak kosong. Setelah tombol "Place Order" ditekan dan data valid, keranjang akan dikosongkan dan pengguna kembali ke halaman utama.
+   Setelah tombol "Place Order" ditekan dan data valid, keranjang akan dikosongkan dan pengguna kembali ke halaman utama.
+
+   <img width="233" height="48" alt="image" src="https://github.com/user-attachments/assets/9eccf0b4-f12a-4e91-8c12-7f42aabdbeb5" />
+
 
 ---
 
