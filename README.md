@@ -86,13 +86,13 @@ File main.dart adalah titik awal aplikasi dijalankan. Di sini juga diatur Provid
   
 2. **Menambahkan Produk ke Keranjang**
   
-   Pengguna dapat menekan tombol “Add” pada produk yang ingin dibeli. Produk akan langsung masuk ke dalam keranjang. Jika produk yang sama ditambahkan lagi, jumlahnya akan otomatis bertambah.
+   Pengguna dapat menekan tombol “Add” yang ada pada button tepat di bawah produk yang ingin dibeli. Produk akan langsung masuk ke dalam keranjang. Jika produk yang sama ditambahkan lagi, jumlahnya akan otomatis bertambah.
 
    <img width="1908" height="880" alt="image" src="https://github.com/user-attachments/assets/f6b5f1da-9689-41d7-99f6-cc5d4fc56fd9" />
 
 3. **Melihat Isi Keranjang**
   
-   Untuk melihat produk yang sudah dipilih, pengguna dapat menekan icon keranjang di bagian atas layar. Halaman cart akan menampilkan daftar produk beserta jumlah masing-masing.
+   Untuk melihat produk yang sudah dipilih, pengguna dapat menekan icon keranjang di bagian atas kanan layar. Lalu, halaman cart akan menampilkan semua daftar produk beserta jumlah masing-masing.
 
    <img width="1902" height="940" alt="Screenshot 2026-02-23 171815" src="https://github.com/user-attachments/assets/744ee2ad-f169-4e94-bf94-354caf83e776" />
 
@@ -106,28 +106,39 @@ File main.dart adalah titik awal aplikasi dijalankan. Di sini juga diatur Provid
    
 5. **Melihat Total Harga**
   
-   Total harga ditampilkan di bagian bawah halaman cart. Nilai total akan selalu berubah mengikuti jumlah dan produk yang ada di dalam keranjang.
+   Sebelum lanjut melakukan Checkout, total harga akan ditampilkan di bagian bawah halaman cart. Nilai total akan selalu berubah mengikuti jumlah dan produk yang ada di dalam keranjang.
 
    <img width="1911" height="117" alt="image" src="https://github.com/user-attachments/assets/1d10b5fc-f24e-4e1e-9742-d232c797bba8" />
 
    
 6. **Melakukan Checkout**
   
-   Jika sudah selesai memilih produk, pengguna dapat menekan tombol “Checkout”. Pengguna akan diarahkan ke halaman checkout yang menampilkan ringkasan pesanan.
+   Jika sudah selesai memilih produk, pengguna dapat menekan tombol “Checkout” yang ada di bagian bawah. Nah, setelah itu pengguna akan diarahkan ke halaman checkout yang menampilkan ringkasan pesanan sebelum benar-benar membeli produk.
 
    <img width="1910" height="941" alt="image" src="https://github.com/user-attachments/assets/5be54103-6138-4fb2-9dd0-ebe40e12d82f" />
 
 
 7. **Mengisi Data Pembeli**
   
-   Pada halaman checkout, pengguna diminta mengisi nama, alamat, dan nomor telepon. Semua data harus diisi sebelum pesanan bisa diproses.
+   Pada halaman checkout, pengguna diminta mengisi form seperti nama, alamat, dan nomor telepon. Semua data harus diisi sebelum pesanan bisa diproses. 
 
    <img width="1902" height="943" alt="image" src="https://github.com/user-attachments/assets/b2f54188-fae2-4f07-9144-074fcf5a9a34" />
 
+   ==**Validasi Form Data Pembeli**==
 
-8. **Menyelesaikan Pesanan**
+   Pada halaman checkout, terdapat form yang harus diisi oleh pengguna, seperti nama lengkap, alamat, dan nomor telepon. Form ini tidak boleh dikosongkan.
+
+   Jika pengguna mencoba melanjutkan pesanan tanpa mengisi data tersebut, sistem akan menolak proses dan tidak akan melanjutkan ke tahap berikutnya. Kolom yang belum diisi akan ditandai sebagai peringatan agar pengguna mengetahui bahwa data tersebut wajib diisi.
+
+   Fitur ini dibuat untuk memastikan bahwa informasi pembeli lengkap dan valid sebelum pesanan diproses. Dengan adanya validasi ini, kesalahan seperti data kosong atau tidak lengkap dapat dicegah.
+
+   <img width="1904" height="942" alt="image" src="https://github.com/user-attachments/assets/c646fcb6-1215-4944-9508-81ef5c0bdc42" />
+
+
+
+9. **Menyelesaikan Pesanan**
   
-    Setelah menekan tombol “Place Order” dan data sudah valid, pesanan dianggap selesai. Keranjang akan dikosongkan dan pengguna kembali ke halaman utama. Setelah itu, akan muncul notifikasi di bagian bawah layar yang menandakan bahwa pesanan berhasil diproses.
+    Setelah mengisi data dengan benar, pengguna bisa langsung menekan tombol “Place Order” dan pesanan dianggap selesai. Keranjang akan dikosongkan dan pengguna kembali ke halaman utama. Setelah itu, akan muncul notifikasi di bagian bawah layar yang menandakan bahwa pesanan berhasil diproses.
 
    <img width="1910" height="956" alt="image" src="https://github.com/user-attachments/assets/c8fc23dc-3b31-4f6d-9c4f-657f7aea1137" />
 
