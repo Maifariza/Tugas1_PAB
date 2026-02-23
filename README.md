@@ -139,4 +139,4 @@ Aplikasi ini dibuat untuk mensimulasikan proses belanja sederhana dalam satu apl
    - Mengembalikan pengguna ke halaman utama
    - Menampilkan notifikasi bahwa pesanan berhasil dilakukan
    
-     <img width="1906" height="943" alt="image" src="https://github.com/user-attachments/assets/5fd1f293-baa6-4059-893e-ba07378f6964" />
+   <img width="1906" height="943" alt="image" src="https://github.com/user-attachments/assets/5fd1f293-baa6-4059-893e-ba07378f6964" />
